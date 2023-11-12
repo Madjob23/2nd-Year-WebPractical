@@ -9,18 +9,21 @@
     <h1>
         LOGIN PAGE
     </h1>
-    <form action="post">
+    <hr>
+    
+    <form name="loginForm" action="/" onsubmit="return validateForm()" method="post" >
         <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Enter your username">
+            <label for="username">Username : </label>
+            <input type="text" name="username"  placeholder="Username">
             <br><br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <label for="password">Password : </label>
+            <input type="password" name="password"  placeholder="Password">
             <br><br>
             <input type="submit" value="Submit" style="color: red;">
             <input type="reset" value="Reset" style="color: red;">
 
         </div>
     </form>
+    <script src="./login.js"></script>
 </body>
 </html>
