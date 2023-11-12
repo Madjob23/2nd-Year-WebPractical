@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Library</title>
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body align="center">
     <h1>
         LOGIN PAGE
     </h1>
     <hr>
-    
+
     <form name="loginForm" action="/" onsubmit="return validateForm()" method="post" >
-        <div>
+        <div class="card">
             <label for="username">Username : </label>
-            <input type="text" name="username"  placeholder="Username">
+            <input type="text" name="username"  placeholder="Username"class="user">
             <br><br>
             <label for="password">Password : </label>
-            <input type="password" name="password"  placeholder="Password">
+            <input type="password" name="password"  placeholder="Password" class="pass">
             <br><br>
             <input type="submit" value="Submit" style="color: red;">
             <input type="reset" value="Reset" style="color: red;">
