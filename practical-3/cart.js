@@ -1,6 +1,8 @@
+const button = document.querySelector(".addtocart");
+const done = document.querySelector(".done");
+console.log(button);
 let added = false;
-function buttonAnimation (button) {
-  let done = button.getElementsByClassName("done")[0];
+button.addEventListener('click',()=>{
   if(added){
     done.style.transform = "translate(-110%) skew(-40deg)";
     added = false;
@@ -9,4 +11,5 @@ function buttonAnimation (button) {
     done.style.transform = "translate(0px)";
     added = true;
   }
-}
+    
+});
